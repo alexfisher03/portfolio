@@ -15,7 +15,7 @@ const About = () => {
                     <p>Hi, I'm Alex and welcome to my portfolio website!</p>
                 </div>
                 <div>
-                    <p>I'm currently studying Computer Science at the University of Florida, actively seeking opportunities to expand my professional horizons in diverse fields.</p>
+                    <p>I built this website using Nodejs, React, and Tailwind CSS. I'm currently studying Computer Science at the University of Florida, actively seeking opportunities to expand my professional horizons.</p>
                 </div>
             </div>
         </div>
