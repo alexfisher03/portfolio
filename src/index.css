@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Montserrat];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 315px;
+    width: 315px;
+}
+
+.content-div:hover {
+    background-image: '../assets/barbell.png'
+    !important;
+}
+
+.skills-div:hover {
+    background-color: #091824;
+}

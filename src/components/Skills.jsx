@@ -1,0 +1,81 @@
+import React from 'react'
+import HTML from '../assets/html.png'
+import CSS from '../assets/css.png'
+import Django from '../assets/django.png'
+import JavaScript from '../assets/javascript.png'
+import Python from '../assets/python.png'
+import ReactIMG from '../assets/react.png'
+
+const Skills = () => {
+  return (
+    <div name='skills' className='w-full h-screen bg-[#091824] text-gray-400'>
+        {/* Container */}
+        <div className='max-w-[1000px] font-bold mx-auto p-4 flex flex-col justify-center w-full h-full'>
+           <div>
+            <p className='text-4xl inline border-b-4 border-blue-200'>Skills</p>
+            <p className='py-4'>// These are some of the technologies I've worked with so far</p>
+           </div>
+
+        <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
+            <div className='group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img className="w-20 mx-auto" src={HTML} alt='HTML icon' />
+                <p className='ny-4'>HTML</p>
+                <div className='opacity-0 pt-1 text-center group-hover:opacity-100 duration-300'>
+                  <a href='https://github.com/search?q=repo%3Aalexfisher03%2FBarbell++language%3AHTML&type=code' target="_blank">
+                    <button className='text-center rounded-sm px-1 py-1 m-1 bg-[#163b5a] text-gray-400 font-bold text-lg hover:scale-110 duration-300'>See Where</button>
+                  </a>
+                </div>
+            </div>
+            <div className='group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img className="w-20 mx-auto" src={CSS} alt='CSS icon' />
+                <p className='ny-4'>CSS</p>
+                <div className='opacity-0 pt-1 text-center group-hover:opacity-100 duration-300'>
+                  <a href='https://github.com/search?q=repo%3Aalexfisher03%2FBarbell++language%3ACSS&type=code' target="_blank">
+                    <button className='text-center rounded-sm px-1 py-1 m-1 bg-[#163b5a] text-gray-400 font-bold text-lg hover:scale-110 duration-300'>See Where</button>
+                  </a>
+                </div>
+            </div>
+            <div className='group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img className="w-20 mx-auto" src={Python} alt='Python icon' />
+                <p className='ny-4'>PYTHON</p>
+                <div className='opacity-0 pt-1 text-center group-hover:opacity-100 duration-300'>
+                  <a href='https://github.com/alexfisher03/Prog1/tree/main/class_dir' target="_blank">
+                    <button className='text-center rounded-sm px-1 py-1 m-1 bg-[#163b5a] text-gray-400 font-bold text-lg hover:scale-110 duration-300'>See Where</button>
+                  </a>
+                </div>
+            </div>
+            <div className='group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img className="w-20 py-2.5 mx-auto" src={Django} alt='Django icon' />
+                <p className='ny-4'>DJANGO</p>
+                <div className='opacity-0 pt-1 text-center group-hover:opacity-100 duration-300'>
+                  <a href='https://github.com/search?q=repo%3Aalexfisher03%2FBarbell++language%3APython&type=code' target="_blank">
+                    <button className='text-center rounded-sm px-1 py-1 m-1 bg-[#163b5a] text-gray-400 font-bold text-lg hover:scale-110 duration-300'>See Where</button>
+                  </a>
+                </div>
+            </div>
+            <div className='group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img className="w-20 mx-auto" src={JavaScript} alt='JavaScript icon' />
+                <p className='ny-4'>JAVASCRIPT</p>
+                <div className='opacity-0 pt-1 text-center group-hover:opacity-100 duration-300'>
+                  <a href='https://github.com/search?q=repo%3Aalexfisher03%2FBarbell++language%3AJavaScript&type=code' target="_blank">
+                    <button className='text-center rounded-sm px-1 py-1 m-1 bg-[#163b5a] text-gray-400 font-bold text-lg hover:scale-110 duration-300'>See Where</button>
+                  </a>
+                </div>
+            </div>
+            <div className='group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img className="w-20 mx-auto" src={ReactIMG} alt='React icon' />
+                <p className='ny-4'>REACT</p>
+                <div className='opacity-0 pt-1 text-center group-hover:opacity-100 duration-300'>
+                  <a href='https://github.com/search?q=repo%3Aalexfisher03%2FReactPortfolio++language%3AJavaScript&type=code' target="_blank">
+                    <button className='text-center rounded-sm px-1 py-1 m-1 bg-[#163b5a] text-gray-400 font-bold text-lg hover:scale-110 duration-300'>See Where</button>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+  )
+}
+
+export default Skills
