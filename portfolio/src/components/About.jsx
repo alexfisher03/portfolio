@@ -27,7 +27,7 @@ const About = () => {
                     <p className='py-2 text-xl'>B.S. in Computer Science - Expected May 2026</p>
                 </div>
                 <div className='hover:scale-125 duration-700 hover:translate-x-11 hover:rotate-12'>
-                    <img src={Gator} alt='Gator Image'/>
+                    <a href='https://www.ufl.edu/' target='_blank'><img src={Gator} alt='Gator Image'/></a>
                 </div>
             </div>
         </div>
