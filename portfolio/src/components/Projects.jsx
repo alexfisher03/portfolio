@@ -10,7 +10,7 @@ const Projects = () => {
           <p className='py-6'>// Check out some of my most recent projects</p>
         </div>
 
-        {/* Container -- ADD GRID TO CLASSNAME FOR THIS DIV IF ADDING MORE ITEMS */}
+        {/* Container -- ADD GRID TO CLASSNAME FOR THIS DIV WHEN ADDING MORE ITEMS */}
         <div className='sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
         {/* Grid Item - append once more projects to display */}
@@ -18,16 +18,16 @@ const Projects = () => {
           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
            
            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 duration-300'>
-              <p className='text-2xl font-bold text-gray-300 tracking-wider text-center'>
+            <div className='opacity-0 group-hover:opacity-100 duration-500'>
+              <p className='text-2xl font-bold text-[#091824] tracking-wider text-center'>
               Barbell - A Full Stack Web Application
               </p>
                 <div className='pt-8 text-center'>
                   <a href='https://www.socialbarbell.com' target="_blank">
-                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-400 text-gray-700 font-bold text-lg hover:scale-110 duration-300'>Visit App</button>
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-400 text-[#091824] font-bold text-lg hover:scale-110 duration-300'>Visit App</button>
                   </a>
                   <a href='https://www.github.com/alexfisher03/barbell' target="_blank">
-                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-400 text-gray-700 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-400 text-[#091824] font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                   </a>
 
                 </div>
