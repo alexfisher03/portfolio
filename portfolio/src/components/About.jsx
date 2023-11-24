@@ -10,7 +10,7 @@ const About = () => {
                     <p className='text-4xl font-bold inline border-b-4 border-[#8892b0]'>About Me</p>
                 </div>
                 <div></div>
-                </div>
+            </div>
             <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                 <div className='sm:text-right text-3xl font-bold'>
                     <p>Hi, I'm Alex - Welcome to my portfolio website!</p>
@@ -26,7 +26,7 @@ const About = () => {
                     <p className='text-[#003087] text-4xl text-bold'>University of Florida</p>
                     <p className='py-1 text-xl'>B.S. in Computer Science - Expected May 2026</p>
                 </div>
-                <div className='lg:inline-block hidden hover:scale-125 duration-700 hover:translate-x-11 hover:rotate-12 translate-x-16 -translate-y-20'>
+                <div className='lg:inline hidden hover:scale-125 duration-700 hover:translate-x-11 hover:rotate-12 translate-x-16 -translate-y-20 z-0'>
                     <a href='https://www.ufl.edu/' target='_blank'><img src={Gator} alt='Gator Image'/></a>
                 </div>
             </div>
