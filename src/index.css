@@ -19,8 +19,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 315px;
-    width: 315px;
+    height: 325px;
+    width: 325px;
 }
 
 .content-div:hover {
@@ -28,6 +28,23 @@
     !important;
 }
 
+@media (min-width: 640px) {
+    .content-div {
+        height: 450px;
+        width: 450px;
+    }
+}
+
 .skills-div:hover {
     background-color: #091824;
 }
+
+.FrontGator:hover {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+  
+  .BackGator {
+    transform: rotateY(180deg);
+    
+  }

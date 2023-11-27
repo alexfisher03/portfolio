@@ -1,5 +1,7 @@
 import React from 'react'
-import Gator from '../assets/gator.png'
+import BackGator from './BackGator'
+import FrontGator from './FrontGator'
+
 
 const About = () => {
   return (
@@ -7,7 +9,7 @@ const About = () => {
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                 <div className='sm:text-right pb-8 pl-4'>
-                    <p className='text-4xl font-bold inline border-b-4 border-[#8892b0]'>About Me</p>
+                    <p className='text-4xl font-bold inline border-b-4 border-[#8892b0]'>About</p>
                 </div>
                 <div></div>
             </div>
@@ -26,8 +28,11 @@ const About = () => {
                     <p className='text-[#003087] text-4xl text-bold'>University of Florida</p>
                     <p className='py-1 text-xl'>B.S. in Computer Science - Expected May 2026</p>
                 </div>
-                <div className='lg:inline hidden hover:scale-125 duration-700 hover:translate-x-11 hover:rotate-12 translate-x-16 -translate-y-20 z-0'>
-                    <a href='https://www.ufl.edu/' target='_blank'><img src={Gator} alt='Gator Image'/></a>
+                <div className='relative w-96 h-60 lg:inline transition-all hidden duration-700 BackGator'>
+                    <a href='https://www.ufl.edu/' target='_blank'>
+                        <FrontGator/>
+                        <BackGator/>
+                    </a>
                 </div>
             </div>
         </div>
