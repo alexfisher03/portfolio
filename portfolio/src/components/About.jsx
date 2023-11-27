@@ -1,5 +1,7 @@
 import React from 'react'
-import Gator from '../assets/gator.png'
+import BackGator from './BackGator'
+import FrontGator from './FrontGator'
+
 
 const About = () => {
   return (
@@ -26,8 +28,11 @@ const About = () => {
                     <p className='text-[#003087] text-4xl text-bold'>University of Florida</p>
                     <p className='py-1 text-xl'>B.S. in Computer Science - Expected May 2026</p>
                 </div>
-                <div className='lg:inline hidden hover:scale-125 duration-700 hover:translate-x-11 hover:rotate-12 translate-x-16 -translate-y-20 z-0'>
-                    <a href='https://www.ufl.edu/' target='_blank'><img src={Gator} alt='Gator Image'/></a>
+                <div className='relative w-96 h-60 lg:inline transition-all hidden duration-700 BackGator'>
+                    <a href='https://www.ufl.edu/' target='_blank'>
+                        <FrontGator/>
+                        <BackGator/>
+                    </a>
                 </div>
             </div>
         </div>
