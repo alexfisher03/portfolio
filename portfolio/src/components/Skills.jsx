@@ -39,7 +39,7 @@ const Skills = () => {
                 <img className="w-20 mx-auto" src={Python} alt='Python icon' />
                 <p className='ny-4'>PYTHON</p>
                 <div className='opacity-0 pt-1 text-center group-hover:opacity-100 duration-300'>
-                  <a href='https://github.com/alexfisher03/Prog1/tree/main/class_dir' target="_blank">
+                  <a href='https://github.com/search?q=repo%3Aalexfisher03%2FProg1++language%3APython&type=code' target="_blank">
                     <button className='text-center rounded-sm px-1 py-1 m-1 bg-[#163b5a] text-gray-400 font-bold text-lg hover:scale-110 duration-300'>See Where</button>
                   </a>
                 </div>
