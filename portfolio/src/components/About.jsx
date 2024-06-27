@@ -1,5 +1,6 @@
 import React from "react";
-import FrontGator from "./FrontGator";
+import Gator from "../assets/gator2.png";
+
 
 const About = () => {
   return (
@@ -37,12 +38,10 @@ const About = () => {
               B.S. in Computer Science - Expected May 2026
             </p>
           </div>
-          <div className="justify-center w-45 h-40 sm:inline-flex transition-all hidden duration-700 BackGator">
-            <a href="https://www.ufl.edu/" target="_blank">
-              <FrontGator />
-            </a>
-          </div>
         </div>
+        <div className="flex justify-end hover:scale-105 duration-75">
+            <img src={Gator} href="https://www.ufl.edu/" target="_blank"/>
+          </div>
       </div>
     </div>
   );

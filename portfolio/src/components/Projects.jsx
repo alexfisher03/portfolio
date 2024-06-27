@@ -20,10 +20,10 @@ const Projects = () => {
            
            {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 duration-500'>
-              <span className='flex text-2xl font-bold text-[#091824] tracking-wider text-center'>
+              <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
               Barbell - Full Stack Social Media Gym App Powered With Django
               </span>
-              <div className='pt-8 text-center'>
+              <div className='sm:pt-8 text-center'>
                 <a href='https://www.socialbarbell.com' target="_blank">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-400 text-[#091824] font-bold text-lg hover:scale-110 duration-300'>Visit App</button>
                 </a>
@@ -40,13 +40,10 @@ const Projects = () => {
            
            {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 bg-[#545454] duration-500'>
-              <span className='flex text-2xl font-bold text-[#091824] tracking-wider text-center'>
+              <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
               CreditSpotter - Financial Aid AI Chatbot Built With OpenAI's LLM API
               </span>
-              <div className='pt-8 text-center'>
-                <a href='#' target="_blank"> {/* Change these URLs to your project links */}
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-400 text-[#091824] font-bold text-lg hover:scale-110 duration-300'>Visit App</button>
-                </a>
+              <div className='sm:pt-8 text-center'>
                 <a href='https://github.com/alexfisher03/CFC_Hackathon2024' target="_blank"> {/* Change these URLs to your project links */}
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-gray-400 text-[#091824] font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                 </a>
