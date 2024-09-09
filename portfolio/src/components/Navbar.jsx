@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#091824] text-gray-300">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#242424] text-gray-300">
       <div>
         <img src={Logo} alt="Logo Image" style={{ width: "50px" }} />
       </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#091824] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#111111] flex flex-col justify-center items-center"
         }
       >
         <li className="hover:scale-110 duration-300 py-6 text-4xl">
@@ -93,7 +93,7 @@ const Navbar = () => {
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#5b50ff]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/alexander-fisher-00209828a/"

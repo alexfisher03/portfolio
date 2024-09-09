@@ -4,7 +4,7 @@ import Gator from "../assets/gator2.png";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#091824] text-gray-400">
+    <div name="about" className="w-full h-screen bg-[#111111] text-gray-400">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -35,8 +35,10 @@ const About = () => {
               University of Florida
             </p>
             <p className="py-1 text-xl">
-              B.S. in Computer Science - Expected May 2026
+              B.S. in Computer Science
             </p>
+            <p className="py-1 text-xl">Minor - Physics</p>
+            <p className="py-1 text-xl">Graduation - Spring 2026</p>
           </div>
         </div>
         <div className="flex justify-end hover:scale-105 duration-75">
