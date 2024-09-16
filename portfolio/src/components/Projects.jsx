@@ -2,13 +2,12 @@ import React from 'react'
 import BBIMG from '../assets/barbell.png'
 import CSIMG from '../assets/CreditSpotter.png'
 import Gradient from '../assets/gradient.png'
-import Gradient2 from '../assets/gradient2.png'
 
 const Projects = () => {
   return (
     <div name="projects" className='w-full md:h-screen text-gray-400 bg-[#111111]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
+        <div className='pb-8 pt-8 sm:pt-0'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-400 border-blue-200'>Projects</p>
           <p className='py-6'>// Check out some of my most recent projects</p>
         </div>
@@ -43,7 +42,7 @@ const Projects = () => {
            {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 bg-[#545454] duration-500'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
-              CreditSpotter - Financial Aid AI Chatbot Built With OpenAI's LLM API
+              Credit Spotter - Financial Aid AI Chatbot Built With OpenAI's LLM API & React during the SHPE'24 Hackathon
               </span>
               <div className='sm:pt-8 text-center'>
                 <a href='https://github.com/alexfisher03/CFC_Hackathon2024' target="_blank"> {/* Change these URLs to your project links */}
