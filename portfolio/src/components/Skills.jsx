@@ -49,7 +49,7 @@ const Skills = () => {
               </a>
             </div>
           </div>
-          <div className="group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          {/* <div className="group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
             <p className="ny-4">HTML</p>
             <div className="opacity-0 pt-1 text-center group-hover:opacity-100 duration-300">
@@ -62,8 +62,8 @@ const Skills = () => {
                 </button>
               </a>
             </div>
-          </div>
-          <div className="group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          </div> */}
+          {/* <div className="group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={CSS} alt="CSS icon" />
             <p className="ny-4">CSS</p>
             <div className="opacity-0 pt-1 text-center group-hover:opacity-100 duration-300">
@@ -76,7 +76,7 @@ const Skills = () => {
                 </button>
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="group skills-div shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img
               className="w-20 py-2.5 mx-auto"

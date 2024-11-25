@@ -37,7 +37,6 @@ const About = () => {
             <p className="py-1 text-xl">
               B.S. in Computer Science
             </p>
-            <p className="py-1 text-xl">Minor - Physics</p>
             <p className="py-1 text-xl">Graduation - Spring 2026</p>
           </div>
         </div>
