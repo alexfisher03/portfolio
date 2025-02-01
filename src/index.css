@@ -18,6 +18,35 @@
     }
 }
 
+.acm1 {
+    background-image: url('./assets/gradient.png');
+    background-size: cover;
+}
+
+.acm1:hover {
+    background-image: url('./assets/textless_gradient.png');
+    background-size: cover;
+}
+
+.bb {
+    background-image: url('./assets/barbell_gradient.png');
+    background-size: cover;
+}
+
+.bb:hover {
+    background-image: url('./assets/dark-mesh-gradient.png');
+    background-size: cover;
+}
+
+.ccc {
+    background-image: url('./assets/ccc.png');
+    background-size: cover;
+}
+
+.ccc:hover {
+    background-image: url('./assets/ccc_alt.png');
+    background-size: cover;
+}
 
 .content-div {
     background-repeat: no-repeat;
@@ -27,10 +56,6 @@
     width: 225px;
 }
 
-.content-div:hover {
-    background-image: '../assets/barbell.png'
-    !important;
-}
 
 @media (min-width: 640px) {
     .content-div {

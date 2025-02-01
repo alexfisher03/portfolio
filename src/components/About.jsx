@@ -16,13 +16,11 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-3xl font-bold">
-            <p>Hi, I'm Alex - Welcome to my portfolio website!</p>
+            <p>Hi, I'm Alexander - Welcome to my portfolio</p>
           </div>
           <div>
             <p>
-              I built this website using React, Tailwind, and some Three.js. I'm
-              currently studying Computer Science at the University of Florida,
-              actively seeking opportunities to expand my professional horizons.
+              I'm a software engineer and computer science student at the University of Florida. I specialize in full-stack web development and have experience with a variety of technologies. I'm passionate about creating software that is both functional and user-friendly. I'm always looking for new opportunities to learn and grow as a developer.
             </p>
           </div>
           <div className="sm:text-right sm:pl-4 pt-3">
@@ -30,7 +28,7 @@ const About = () => {
               My Education
             </p>
           </div>
-          <div className="sm:text-left">
+          <div className="sm:text-left pt-4">
             <p className="text-[#003087] text-4xl text-bold">
               University of Florida
             </p>

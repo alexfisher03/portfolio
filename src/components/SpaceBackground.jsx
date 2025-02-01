@@ -2,11 +2,10 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-const AttractorBackground = () => {
+const SpaceBackground = () => {
   const containerRef = useRef();
 
   useEffect(() => {
-    // Basic Three.js setup: Scene, Camera, Renderer
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -14,10 +13,10 @@ const AttractorBackground = () => {
       0.1,
       1000
     );
-    camera.position.set(0, 0, 5); // Start camera position
+    camera.position.set(0, 0, 5);
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(window.innerWidth, window.innerHeight); // Set the renderer to fill the window
+    renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
     containerRef.current.appendChild(renderer.domElement);
 
@@ -25,7 +24,7 @@ const AttractorBackground = () => {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
 
-    // Create a starfield
+    // starfield
     const starsGeometry = new THREE.BufferGeometry();
     const starVertices = [];
     for (let i = 0; i < 10000; i++) {
@@ -57,15 +56,15 @@ const AttractorBackground = () => {
 
     // Handle resizing
     const handleResize = () => {
-      const { clientWidth, clientHeight } = containerRef.current;
-      renderer.setSize(clientWidth, clientHeight);
+      const { clientHeight } = containerRef.current;
+      const clientWidth = window.innerWidth
+      renderer.setSize(clientHeight);
       camera.aspect = clientWidth / clientHeight;
       camera.updateProjectionMatrix();
     };
 
     window.addEventListener("resize", handleResize);
 
-    // Cleanup on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
       containerRef.current.removeChild(renderer.domElement);
@@ -75,10 +74,9 @@ const AttractorBackground = () => {
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 pointer-events-none"
-      style={{ width: "100%", height: "100%" }}
+      className="fixed inset-0 pointer-events-none"
     />
   );
 };
 
-export default AttractorBackground;
+export default SpaceBackground;
