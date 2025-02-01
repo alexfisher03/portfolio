@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.055c8111.css",
-    "main.js": "/portfolio/static/js/main.7e7338d4.js",
+    "main.css": "/portfolio/static/css/main.ae36f655.css",
+    "main.js": "/portfolio/static/js/main.9ef6e2cd.js",
     "static/media/barbell_gradient.png": "/portfolio/static/media/barbell_gradient.13977a4b823681df5781.png",
     "static/media/dark-mesh-gradient.png": "/portfolio/static/media/dark-mesh-gradient.67d3e751fd8685ec8e2d.png",
     "static/media/ccc.png": "/portfolio/static/media/ccc.46103edfc2abbad3c13d.png",
@@ -16,11 +16,11 @@
     "static/media/CreditSpotter.png": "/portfolio/static/media/CreditSpotter.07b5a24520876d7c5feb.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.055c8111.css.map": "/portfolio/static/css/main.055c8111.css.map",
-    "main.7e7338d4.js.map": "/portfolio/static/js/main.7e7338d4.js.map"
+    "main.ae36f655.css.map": "/portfolio/static/css/main.ae36f655.css.map",
+    "main.9ef6e2cd.js.map": "/portfolio/static/js/main.9ef6e2cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.055c8111.css",
-    "static/js/main.7e7338d4.js"
+    "static/css/main.ae36f655.css",
+    "static/js/main.9ef6e2cd.js"
   ]
 }
