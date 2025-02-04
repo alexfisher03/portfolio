@@ -4,10 +4,10 @@ import Connect from '../assets/acm_connect.png'
 
 const Projects = () => {
   return (
-    <div name="projects" className='w-full text-gray-400 bg-[#111111]'>
+    <div name="projects" className='w-full text-gray-200 bg-[#111111]'>
       <div className='max-w-[1000px] mx-auto p-4 sm:pt-52 flex flex-col justify-center w-full h-full'>
         <div className='pb-8 pt-8 sm:pt-0'>
-          <p className='text-4xl font-bold inline border-b-4 text-gray-400 border-blue-200'>Projects</p>
+          <p className='text-4xl font-bold inline border-b-4 text-gray-200 border-gray-200'>Projects</p>
           <p className='py-6'>// Check out some of my most recent projects</p>
         </div>
 
@@ -16,9 +16,9 @@ const Projects = () => {
 
           {/* Grid Item for UF-ACM */}
           <div
-          className='acm1 shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+          className='acm1 hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
             {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 duration-500'>
+            <div className='opacity-0 group-hover:opacity-100 transform transition ease-in-out duration-300'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
               ACMake Design Team - Redesigned the official UF ACM Website using React, Tailwind, and Firebase
               </span>
@@ -35,7 +35,7 @@ const Projects = () => {
 
           {/* Grid Item for ACM Connect */}
           <div style={{backgroundImage: `url(${Connect})`}}
-          className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+          className='hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 bg-white duration-500'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
@@ -50,9 +50,9 @@ const Projects = () => {
           </div>
 
           {/* Grid Item for Barbell */}
-          <div className='bb shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+          <div className='bb hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
            {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 duration-500'>
+            <div className='opacity-0 group-hover:opacity-100 transform transition ease-in-out duration-300'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#ffffff] tracking-wider text-center'>
               Barbell - Full Stack Social Media Gym App Powered With Django
               </span>
@@ -68,8 +68,8 @@ const Projects = () => {
           </div>
 
           {/* Grid item for Craiglist */}
-          <div className='ccc shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-            <div className='opacity-0 group-hover:opacity-100 duration-500'>
+          <div className='ccc hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
+            <div className='opacity-0 group-hover:opacity-100 transform transition ease-in-out duration-300'>
               <span className='flex text-sm sm:text-2xl font-bold text-white tracking-wider text-center'>
               Craigslist CarCache - C++ applet which sorts and provides best deals on real car listings: uses OOP, Hashing, and AVL Trees
               </span>
@@ -83,7 +83,7 @@ const Projects = () => {
 
           {/* Grid item for Credit Spotter */}
           <div style={{backgroundImage: `url(${CSIMG})`}}
-          className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+          className='hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
             <div className='opacity-0 group-hover:opacity-100 bg-[#545454] duration-500'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
               Credit Spotter - Financial Aid AI Chatbot Built With OpenAI's LLM API & React during the SHPE'24 Hackathon

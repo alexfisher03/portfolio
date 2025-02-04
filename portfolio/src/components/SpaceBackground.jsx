@@ -91,8 +91,8 @@ const SpaceBackground = () => {
     const animate = () => {
       requestAnimationFrame(animate);
       //slowly rotate the star field
-      starField.rotation.x += 0.0005;
-      starField.rotation.y += 0.001;
+      starField.rotation.x += 0.00025;
+      starField.rotation.y += 0.00025;
       controls.update();
 
       //randomly spawn shooting stars

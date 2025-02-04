@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#242424] text-gray-300">
       <div>
-        <img src={Logo} alt="Logo Image" style={{ width: "50px" }} />
+        <img src={Logo} alt="Logo Image" style={{ width: "75px" }} />
       </div>
 
       {/* Menu */}
@@ -45,17 +45,18 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Hamburger */}
+      {/* Hamburger
       <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
-      </div>
+      </div> */}
 
-      {/* Mobile menu */}
+      {/* Mobile menu
       <ul
+        style={{ backgroundColor: "#1b1b1b" }}
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#111111] flex flex-col justify-center items-center"
+            : "fixed top-0 left-0 w-full h-screen z-50 bg-opacity-100 flex flex-col justify-center items-center"
         }
       >
         <li className="hover:scale-110 duration-300 py-6 text-4xl">
@@ -88,7 +89,7 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-      </ul>
+      </ul> */}
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0 z-20">

@@ -12,10 +12,10 @@ const Contact = () => {
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-blue-200 text-gray-400">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-200 text-gray-200">
             Contact
           </p>
-          <p className="text-gray-400 py-4">
+          <p className="text-gray-200 py-4">
             // Feel free to contact me below, or at - alexanderfisher@ufl.edu
           </p>
         </div>
@@ -37,7 +37,7 @@ const Contact = () => {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="text-white border-2 hover:bg-slate-600 hover:border-slate-600 px-4 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+        <button className="text-white border-2 hover:bg-slate-400 hover:border-slate-400 px-4 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 transform transition ease-in-out duration-300">
           Contact Me
         </button>
       </form>
