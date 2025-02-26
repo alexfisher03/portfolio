@@ -4,7 +4,7 @@ import Gator from "../assets/gator2.png";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#111111] text-gray-200 pb-16 sm:pb-0">
+    <div name="about" className="w-full min-h-screen bg-[#111111] text-gray-200 pb-16 sm:pb-0">
       <div className="flex flex-col justify-center items-center w-full h-full translate-y-20 mx-auto">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">

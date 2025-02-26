@@ -19,7 +19,7 @@ const Projects = () => {
           className='qv hover:shadow-lg hover:shadow-red-500 transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 transform transition ease-in-out duration-300'>
-              <span className='flex text-xs sm:text-2xl text-gray-200 tracking-wider text-center w-4/5 translate-x-10'>
+              <span className='flex text-xs sm:text-2xl text-gray-200 tracking-wider text-center w-4/5 translate-x-6 sm:translate-x-10'>
               Quantum Vision - Simulation based modern and quantum physics web app, built using Svelte-Kit and TypeScript
               </span>
               <div className='sm:pt-8 text-center'>

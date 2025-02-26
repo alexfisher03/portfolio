@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import starImg from "../assets/star.png";
 
 const SpaceBackground = () => {
   const containerRef = useRef();
@@ -24,6 +25,18 @@ const SpaceBackground = () => {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
 
+    //star sprite
+    const starLoader = new THREE.TextureLoader();
+    const starTexture = starLoader.load(starImg);
+
+     // Use PointsMaterial with the custom sprite texture
+     const starsMaterial = new THREE.PointsMaterial({
+      map: starTexture,
+      size: 3, // adjust to your liking
+      transparent: true,
+      depthWrite: false,
+    });
+
     //static starfield background
     const starsGeometry = new THREE.BufferGeometry();
     const starVertices = [];
@@ -38,7 +51,6 @@ const SpaceBackground = () => {
       "position",
       new THREE.Float32BufferAttribute(starVertices, 3)
     );
-    const starsMaterial = new THREE.PointsMaterial({ color: 0x888888 });
     const starField = new THREE.Points(starsGeometry, starsMaterial);
     scene.add(starField);
 
