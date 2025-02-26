@@ -14,9 +14,28 @@ const Projects = () => {
         {/* Container with updated grid settings */}
         <div className='grid grid-cols-1 gap-3 sm:grid sm:grid-cols-2 sm:gap-3 sm:space-y-3 text-center py-8'>
 
+          {/* Grid Item for Quantum Vision */}
+          <div
+          className='qv hover:shadow-lg hover:shadow-red-500 transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
+            {/* Hover Effects */}
+            <div className='opacity-0 group-hover:opacity-100 transform transition ease-in-out duration-300'>
+              <span className='flex text-xs sm:text-2xl text-gray-200 tracking-wider text-center w-4/5 translate-x-10'>
+              Quantum Vision - Simulation based modern and quantum physics web app, built using Svelte-Kit and TypeScript
+              </span>
+              <div className='sm:pt-8 text-center'>
+                <a href='https://www.qvisionsim.com' target="_blank">
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>Visit Site</button>
+                  </a>
+                <a href='https://github.com/alexfisher03/QuantumVision' target="_blank">
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Grid Item for UF-ACM */}
           <div
-          className='acm1 hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
+          className='acm1 hover:shadow-lg hover:shadow-[#bb75af] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 transform transition ease-in-out duration-300'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
@@ -24,10 +43,10 @@ const Projects = () => {
               </span>
               <div className='sm:pt-8 text-center'>
                 <a href='https://www.uf-acm.com' target="_blank">
-                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#434b55] text-[#091824] font-bold text-lg hover:scale-110 duration-300'>Visit Site</button>
+                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>Visit Site</button>
                   </a>
                 <a href='https://github.com/a1exanderklein/ACM-Website' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#434b55] text-[#091824] font-bold text-lg hover:scale-110 duration-300'>View Code</button>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                 </a>
               </div>
             </div>
@@ -35,7 +54,7 @@ const Projects = () => {
 
           {/* Grid Item for ACM Connect */}
           <div style={{backgroundImage: `url(${Connect})`}}
-          className='hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
+          className='hover:shadow-lg hover:shadow-[#d9a6d9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 bg-white duration-500'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#091824] tracking-wider text-center'>
@@ -43,14 +62,14 @@ const Projects = () => {
               </span>
               <div className='sm:pt-8 text-center'>
                 <a href='https://github.com/j10czar/opportunities-discord-bot?tab=readme-ov-file' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#434b55] text-[#091824] font-bold text-lg hover:scale-110 duration-300'>View Code</button>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                 </a>
               </div>
             </div>
           </div>
 
           {/* Grid Item for Barbell */}
-          <div className='bb hover:shadow-lg hover:shadow-[#a6bed9] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
+          <div className='bb hover:shadow-lg hover:shadow-[#7b487c] transform transition ease-in-out duration-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
            {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100 transform transition ease-in-out duration-300'>
               <span className='flex text-sm sm:text-2xl font-bold text-[#ffffff] tracking-wider text-center'>
@@ -58,10 +77,10 @@ const Projects = () => {
               </span>
               <div className='sm:pt-8 text-center'>
                 <a href='https://www.socialbarbell.com' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#434b55] text-[#091824] font-bold text-lg hover:scale-110 duration-300'>Visit App</button>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>Visit App</button>
                 </a>
                 <a href='https://www.github.com/alexfisher03/barbell' target="_blank">
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#434b55] text-[#091824] font-bold text-lg hover:scale-110 duration-300'>View Code</button>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                 </a>
               </div>
             </div>
@@ -75,7 +94,7 @@ const Projects = () => {
               </span>
               <div className='sm:pt-8 text-center'>
                 <a href='https://github.com/alexfisher03/COP3530_project3' target="_blank"> 
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#434b55] text-[#091824] font-bold text-lg hover:scale-110 duration-300'>View Code</button>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                 </a>
               </div>
             </div>
@@ -90,7 +109,7 @@ const Projects = () => {
               </span>
               <div className='sm:pt-8 text-center'>
                 <a href='https://github.com/alexfisher03/CFC_Hackathon2024' target="_blank"> 
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#434b55] text-[#091824] font-bold text-lg hover:scale-110 duration-300'>View Code</button>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                 </a>
               </div>
             </div>

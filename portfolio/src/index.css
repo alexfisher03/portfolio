@@ -18,6 +18,16 @@
     }
 }
 
+.qv {
+    background-image: url('./assets/QV_text.png');
+    background-size: cover;
+}
+
+.qv:hover {
+    background-image: url('./assets/QV_blank.png');
+    background-size: cover;
+}
+
 .acm1 {
     background-image: url('./assets/gradient.png');
     background-size: cover;

@@ -4,7 +4,7 @@ import Gator from "../assets/gator2.png";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#111111] text-gray-200">
+    <div name="about" className="w-full h-screen bg-[#111111] text-gray-200 pb-16 sm:pb-0">
       <div className="flex flex-col justify-center items-center w-full h-full translate-y-20 mx-auto">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -24,12 +24,12 @@ const About = () => {
             </p>
           </div>
           <div className="sm:text-right sm:pl-4 pt-3">
-            <p className="text-4xl font-bold inline sm:inline border-b-4 border-gray-200">
+            <p className="text-2xl sm:text-4xl font-bold inline sm:inline">
               My Education
             </p>
           </div>
-          <div className="sm:text-left pt-4">
-            <p className="text-[#003087] text-4xl text-bold">
+          <div className="sm:text-left">
+            <p className="text-[#003087] text-2xl sm:text-4xl text-bold">
               University of Florida
             </p>
             <p className="py-1 text-xl">
@@ -38,7 +38,7 @@ const About = () => {
             <p className="py-1 text-xl">Graduation - Spring 2026</p>
           </div>
         </div>
-        <div className="opacity-0 pt-12 sm:opacity-100 flex justify-end ">
+        <div className="opacity-0 pt-12 sm:opacity-100 flex justify-end mb-36 sm:mb-0">
             <img className="w-1/2 hover:scale-105 hover:translate-y-2 hover:scale-y-95 transform transition ease-in-out duration-300" src={Gator} href="https://www.ufl.edu/" target="_blank"/>
           </div>
       </div>

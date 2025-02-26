@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#242424] text-gray-300">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#242424] text-gray-300 z-50 opacity-90">
       <div>
         <img src={Logo} alt="Logo Image" style={{ width: "75px" }} />
       </div>
@@ -36,11 +36,6 @@ const Navbar = () => {
         <li className="hover:scale-110 duration-300">
           <Link to="projects" smooth={true} duration={600}>
             Projects
-          </Link>
-        </li>
-        <li className="hover:scale-110 duration-300">
-          <Link to="contact" smooth={true} duration={600}>
-            Contact
           </Link>
         </li>
       </ul>

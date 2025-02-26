@@ -5,10 +5,13 @@ import Python from "../assets/python.png";
 import ReactIMG from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import Cpp from "../assets/cpp.png";
+import Svelte from "../assets/svelte.png";
+import TypeScript from "../assets/typescript.png";
+import ThreeJS from "../assets/threejs.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-screen bg-[#111111] text-gray-200">
+    <div name="skills" className="w-full h-screen bg-[#111111] text-gray-200 pb-44">
       {/* Container */}
       <div className="max-w-[1000px] font-bold mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
@@ -104,6 +107,48 @@ const Skills = () => {
             <div className="opacity-0 pt-1 text-center group-hover:opacity-100 duration-300">
               <a
                 href="https://github.com/a1exanderklein/ACM-Website"
+                target="_blank"
+              >
+                <button className="text-center rounded-sm px-1 py-1 m-1 bg-[#1d1d1d] text-gray-200 font-bold text-lg hover:scale-110 transform transition ease-in-out duration-300">
+                  See Where
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="group skills-div bg-[#1b1b1b] shadow-lg shadow-[#20252c] hover:scale-110 transform transition ease-in-out duration-500">
+            <img className="w-20 mx-auto" src={Svelte} alt="Svelte Icon" />
+            <p className="ny-4">SVELTE</p>
+            <div className="opacity-0 pt-1 text-center group-hover:opacity-100 duration-300">
+              <a
+                href="https://github.com/alexfisher03/QuantumVision"
+                target="_blank"
+              >
+                <button className="text-center rounded-sm px-1 py-1 m-1 bg-[#1d1d1d] text-gray-200 font-bold text-lg hover:scale-110 transform transition ease-in-out duration-300">
+                  See Where
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="group skills-div bg-[#1b1b1b] shadow-lg shadow-[#20252c] hover:scale-110 transform transition ease-in-out duration-500">
+            <img className="w-20 mx-auto pb-3" src={TypeScript} alt="TypeScript Icon" />
+            <p className="ny-4">TYPESCRIPT</p>
+            <div className="opacity-0 pt-1 text-center group-hover:opacity-100 duration-300">
+              <a
+                href="https://github.com/alexfisher03/QuantumVision"
+                target="_blank"
+              >
+                <button className="text-center rounded-sm px-1 py-1 m-1 bg-[#1d1d1d] text-gray-200 font-bold text-lg hover:scale-110 transform transition ease-in-out duration-300">
+                  See Where
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="group skills-div bg-[#1b1b1b] shadow-lg shadow-[#20252c] hover:scale-110 transform transition ease-in-out duration-500">
+            <img className="w-20 mx-auto pb-3" src={ThreeJS} alt="Threejs Icon" />
+            <p className="ny-4">THREEJS</p>
+            <div className="opacity-0 pt-1 text-center group-hover:opacity-100 duration-300">
+              <a
+                href="https://github.com/alexfisher03/QuantumVision"
                 target="_blank"
               >
                 <button className="text-center rounded-sm px-1 py-1 m-1 bg-[#1d1d1d] text-gray-200 font-bold text-lg hover:scale-110 transform transition ease-in-out duration-300">
