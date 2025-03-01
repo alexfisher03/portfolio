@@ -76,9 +76,9 @@ const Projects = () => {
               Barbell - Full Stack Social Media Gym App Powered With Django
               </span>
               <div className='sm:pt-8 text-center'>
-                <a href='https://www.socialbarbell.com' target="_blank">
+                {/* <a href='https://www.socialbarbell.com' target="_blank">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>Visit App</button>
-                </a>
+                </a> */}
                 <a href='https://www.github.com/alexfisher03/barbell' target="_blank">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-[#0d0f11] text-gray-200 font-bold text-lg hover:scale-110 duration-300'>View Code</button>
                 </a>
