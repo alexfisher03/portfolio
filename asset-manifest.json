@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7b5c75da.css",
-    "main.js": "/portfolio/static/js/main.aff2058a.js",
+    "main.js": "/portfolio/static/js/main.65f4e417.js",
     "static/media/QV_text.png": "/portfolio/static/media/QV_text.f070acfdead6884f35e2.png",
     "static/media/QV_blank.png": "/portfolio/static/media/QV_blank.40e8277491b07d4ad154.png",
     "static/media/barbell_gradient.png": "/portfolio/static/media/barbell_gradient.13977a4b823681df5781.png",
@@ -17,16 +17,17 @@
     "static/media/cpp.png": "/portfolio/static/media/cpp.053a898d752aef72651e.png",
     "static/media/react.png": "/portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/threejs.png": "/portfolio/static/media/threejs.eaea69a6236c6fd1f6fd.png",
+    "static/media/java-coffee-cup-logo.png": "/portfolio/static/media/java-coffee-cup-logo.3c0fdf5239c7feb968e1.png",
     "static/media/logo.png": "/portfolio/static/media/logo.597f69544a5d2b4652b1.png",
     "static/media/tailwind.png": "/portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/CreditSpotter.png": "/portfolio/static/media/CreditSpotter.07b5a24520876d7c5feb.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
     "main.7b5c75da.css.map": "/portfolio/static/css/main.7b5c75da.css.map",
-    "main.aff2058a.js.map": "/portfolio/static/js/main.aff2058a.js.map"
+    "main.65f4e417.js.map": "/portfolio/static/js/main.65f4e417.js.map"
   },
   "entrypoints": [
     "static/css/main.7b5c75da.css",
-    "static/js/main.aff2058a.js"
+    "static/js/main.65f4e417.js"
   ]
 }
