@@ -31,7 +31,7 @@ export default function Backdrop() {
         ctx.lineWidth = lineWidth;
 
         const count = Math.ceil((width + height) / spacing) * 2;
-        const speed = 0.65; 
+        const speed = 0.75; 
 
         for (let i = -count; i < count; i+=2) {
             const offset = i * spacing;
@@ -40,7 +40,7 @@ export default function Backdrop() {
 
             const projected = (offset + diag) / (2 * diag); 
             const wave = Math.sin(2 * Math.PI * (projected - (t / 2000) * speed));
-            const opacity = 0.12 * Math.max(0, wave); 
+            const opacity = 0.15 * Math.max(0, wave); 
 
             ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
 

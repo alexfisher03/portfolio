@@ -1,17 +1,12 @@
-import About from "./components/About/About"
-import Backdrop from "./components/Backdrop/Backdrop"
-import Header from "./components/Header/Header"
+import { Maincontent } from "./components/Maincontent"
+import { ViewportProvider } from "./context/ViewportContent"
 
 function App() {
 
   return (
-    <div className="relative">
-     <Backdrop />
-     <div className="relative z-10">
-      <Header />
-      <About/>
-     </div>
-    </div>
+    <ViewportProvider>
+      <Maincontent />
+    </ViewportProvider>
   )
 }
 
