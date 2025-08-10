@@ -10,6 +10,10 @@
   }
 }
 
+@keyframes spin-rev {
+  to { rotate: -2turn; }
+}
+
 :root {
   font-family: 'Karla', sans-serif;
   font-optical-sizing: auto;

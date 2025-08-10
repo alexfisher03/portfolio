@@ -1,5 +1,5 @@
 import { Maincontent } from "./components/Maincontent"
-import { ViewportProvider } from "./context/ViewportContent"
+import { ViewportProvider } from "./context/ViewportContext"
 
 function App() {
 

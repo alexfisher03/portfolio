@@ -16,7 +16,7 @@ function About() {
       initial={{ opacity: 0, y: 10, scale: 0.95 }}
       animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
       transition={{ duration: 1.0, delay: 0.5, ease: [0, 0.9, 0.5, 1.01] }}
-      className="relative overflow-hidden rounded-[50px] px-12 py-12 sm:py-24 m-10 border-[0.01px] border-[#ffffff3e] backdrop-blur-sm shadow-[0_10px_40px_0_rgba(127,29,29,0.2)]"
+      className="relative overflow-hidden rounded-[32px] px-6 py-8 sm:px-12 sm:py-20 mx-4 sm:mx-10 m-10 border-[0.01px] border-[#ffffff3e] backdrop-blur-sm shadow-[0_10px_40px_0_rgba(127,29,29,0.2)]"
     >
       <img
         src={aboutBg}
