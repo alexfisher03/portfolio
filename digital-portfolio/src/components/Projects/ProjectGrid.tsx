@@ -6,6 +6,8 @@ import swampSubleasing from "../../assets/ss.png"
 import ufACM from "../../assets/uf-acm.png"
 import ufACMAlt from "../../assets/uf-acm-alt.gif"
 import bbBg from "../../assets/bb-bg.png"
+import {Link} from "react-router-dom"
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const projects = [
   {
@@ -18,7 +20,7 @@ const projects = [
   },
   {
     title: "Swamp Subleasing",
-    description: "Early contributor — Platform for UF students to list and find subleases all in one place",
+    description: "Early contributor — Platform for UF students to list and find subleases all in one place (400+ Users)",
     link: "https://www.swampsubleasing.com/",
     imageUrl: swampSubleasing,
     altUrl: undefined,
@@ -50,12 +52,22 @@ export default function ProjectGrid() {
       transition={{ delay: 0.5, duration: 0.45, ease: "easeOut" as const }}
       className="relative overflow-hidden rounded-[32px] px-6 py-8 sm:px-12 sm:py-16"
     >
-      <h2 className="text-base sm:text-2xl text-white/60 mb-4 sm:mb-6">PROJECTS</h2>
+      <h2 className="text-xl sm:text-2xl text-white opacity-50 mb-4 sm:mb-6">PROJECTS</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 group/projects">
         {projects.map((p) => (
           <ProjectItem key={p.title} {...p} />
         ))}
       </ul>
+      <div className="flex justify-start text-xl sm:text-2xl text-white opacity-50 mt-8 sm:mt-16">
+        <div className="flex">
+          <Link to="/archive" className="flex items-center group">
+            <p className="group-hover:border-b-1 border-blue-400/60 transition-colors duration-200">VIEW ALL PROJECTS</p>
+            <span className="ml-2 transform transition-transform duration-200 -translate-y-0.5 group-hover:translate-x-2">
+              <ArrowForwardIcon fontSize="small" />
+            </span>
+          </Link>
+        </div>
+      </div>
     </motion.section>
   )
 }

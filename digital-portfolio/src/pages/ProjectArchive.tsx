@@ -1,9 +1,12 @@
-import React from 'react'
 
-const ProjectArchive = () => {
+import Backdrop from '../components/Backdrop/Backdrop'
+import ProjectArchiveLayout from '../components/Projects/Archive/ProjectArchiveLayout'
+
+export default function ProjectArchive() {
   return (
-    <div>ProjectArchive</div>
+    <div className="relative cursor-default">
+      <Backdrop />
+      <ProjectArchiveLayout />
+    </div>
   )
 }
-
-export default ProjectArchive

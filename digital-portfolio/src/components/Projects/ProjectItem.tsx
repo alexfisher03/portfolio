@@ -18,7 +18,7 @@ type Props = {
 
 export default function ProjectItem({ title, description, link, imageUrl, altUrl, technologies }: Props) {
   return (
-    <motion.li variants={itemVariants} className="group group-hover/projects:opacity-40 hover:opacity-100 transition-opacity duration-200 w-full">
+    <motion.li variants={itemVariants} className="group group-hover/projects:opacity-20 hover:opacity-100 transition-opacity duration-200 w-full">
       <a
         href={link}
         target="_blank"
@@ -44,8 +44,8 @@ export default function ProjectItem({ title, description, link, imageUrl, altUrl
 
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-black/20 to-transparent backdrop-blur-sm sm:backdrop-blur-none" />
 
-          <div className="absolute inset-x-0 bottom-0 z-20 p-4 sm:p-6">
-            <div className="rounded-sm p-2 sm:p-3 transition-colors duration-150 sm:backdrop-blur-[3px]">
+          <div className="absolute inset-x-0 bottom-0 z-20 p-4 sm:p-6 sm:backdrop-blur-[1px]">
+            <div className="rounded-sm p-2 sm:p-3 transition-colors duration-150 ">
               <div className="flex">
                 <h3 className="text-white text-lg font-semibold group-hover:text-[#ff3232] transition-colors duration-200">{title}</h3>
                 <div className="ml-1 text-white group-hover:text-[#ff3232] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300">
