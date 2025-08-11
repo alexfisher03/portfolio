@@ -1,13 +1,20 @@
 import { motion } from "motion/react"
 import { useViewport } from "../../context/ViewportContext"
 
-type Props = { onRevealExperience: () => void }
+type Props = { onRevealExperience: () => void, onRevealProjects: () => void }
 
-const Header = ({ onRevealExperience }: Props) => {
+const Header = ({ onRevealExperience, onRevealProjects }: Props) => {
   const { isMobile } = useViewport()
   const goExp = () => {
     onRevealExperience()
     document.getElementById("experience-anchor")?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+  const goProj = () => {
+    onRevealExperience()
+    onRevealProjects()
+    requestAnimationFrame(() => {
+      document.getElementById("projects-anchor")?.scrollIntoView({ behavior: "smooth", block: "start" })
+    })
   }
   return (
     <div className="flex justify-center sm:flex-row">
@@ -24,7 +31,7 @@ const Header = ({ onRevealExperience }: Props) => {
               <p onClick={goExp} className="cursor-pointer hover:text-gray-300 transition-colors duration-150 ease-in-out">Experience</p>
             </motion.nav>
             <motion.nav initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.45, delay: 0.35 }} className="text-gray-400 text-base sm:text-lg mr-6 mt-2">
-              <p className="cursor-pointer hover:text-gray-300 transition-colors duration-150 ease-in-out">Projects</p>
+              <p onClick={goProj} className="cursor-pointer hover:text-gray-300 transition-colors duration-150 ease-in-out">Projects</p>
             </motion.nav>
           </div>
         </div>
