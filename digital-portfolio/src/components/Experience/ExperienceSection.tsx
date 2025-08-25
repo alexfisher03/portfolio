@@ -53,7 +53,7 @@ export default function ExperienceSection() {
               </div>
               <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-6 sm:mb-0">
                 <ExperienceItem
-                  title="Design Team Lead"
+                  title="Software Engineer Lead"
                   company="UF Association for Computing Machinery (ACM)"
                   description="Redesigned and optimized the UF ACM website (Spring 2024) with React, Framer Motion, and Tailwind CSS, improving performance, maintainability, and engagement. Developed and deployed ACM Connect (Fall 2024), a Discord bot on AWS EC2 using discord.py, automating daily internship and opportunity postings for 2,100+ members. Built and launched the ACM Admin Dashboard (Spring 2025) with Next.js, React, and Firebase, centralizing meetings, attendance, analytics, and member administration for 475+ users."
                   technologies={["React", "Next.js", "Firebase", "Framer Motion", "Tailwind CSS", "AWS EC2", "discord.py"]}
