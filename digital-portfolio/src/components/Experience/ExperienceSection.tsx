@@ -41,6 +41,19 @@ export default function ExperienceSection() {
               </div>
               <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-12 sm:mb-0">
                 <ExperienceItem
+                 title="DevGuard – Open-Source Vulnerability Management Platform"
+                 company="L3montree Cybersecurity"
+                 description=" Contributor to DevGuard, an OWASP incubating project for vulnerability management, where I focused on improving user experience
+                 and frontend usability
+                 Learned Ory Kratos, custom UI components, and TypeScript-heavy patterns
+                 Collaborated with maintainers via peer review, ensuring all contributions passed Jest/unit tests and CI checks before merging"
+                technologies={["TypeScript", "Ory Kratos", "Github" ]}
+                date="May 2025"
+                link="https://devguard.org/"
+              />
+              </div>
+              <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-12 sm:mb-0">
+                <ExperienceItem
                   title="Vice President - Internal"
                   company="UF Association for Computing Machinery (ACM)"
                   description="Managed internal operations for UF’s largest pre-professional Computer Science organization, establishing repeatable formulas for successful workshop and social event creation.
@@ -49,6 +62,15 @@ export default function ExperienceSection() {
                 technologies={["Public Speaking", "Organization Leadership", "React", "Git", "HTML", "CSS", "JavaScript", "Supabase", "Figma", "Firebase"]}
                 date="January 2023 - Present"
                 link="https://uf-acm.com/"
+                />
+              </div>
+              <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-12 sm:mb-0">
+                <ExperienceItem
+                  title="UF - Quantum Computing Undergraduate Research"
+                  company="Herbert Wertheim College of Engineering"
+                  description="Applied quantum algorithms to improve defect prediction, test optimization, and vulnerability detection in classical software systems,
+                  conducting research under Dr. Christophe Bobda in the Department of Electrical and Computer Engineering."
+                  date="August 2025 - Present"
                 />
               </div>
               <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-6 sm:mb-0">
