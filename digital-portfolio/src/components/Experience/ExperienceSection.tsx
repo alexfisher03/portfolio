@@ -71,6 +71,7 @@ export default function ExperienceSection() {
                   description="Applied quantum algorithms to improve defect prediction, test optimization, and vulnerability detection in classical software systems,
                   conducting research under Dr. Christophe Bobda in the Department of Electrical and Computer Engineering."
                   date="August 2025 - Present"
+                  technologies={["Quantum Mechanics", "Qiskit"]}
                 />
               </div>
               <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-6 sm:mb-0">
