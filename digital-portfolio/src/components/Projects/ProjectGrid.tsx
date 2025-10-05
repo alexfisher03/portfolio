@@ -19,9 +19,9 @@ const projects = [
     technologies: ["Svelte", "SvelteKit", "Typescript", "Tailwind", "Svelte Cubed"]
   },
   {
-    title: "Swamp Subleasing",
+    title: "Gator Subleasing",
     description: "Early contributor — Platform for UF students to list and find subleases all in one place (400+ Users)",
-    link: "https://www.swampsubleasing.com/",
+    link: "https://www.gatorsubleasing.com/",
     imageUrl: swampSubleasing,
     altUrl: undefined,
     technologies: ["React", "Next.js", "Tailwind", "PostgreSQL"]

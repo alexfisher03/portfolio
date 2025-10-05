@@ -51,8 +51,6 @@ function About() {
               <p className="text-sm sm:text-base italic bg-[linear-gradient(to_right,#999999,#2e557e,#2e557e,#2e557e,#999999,#ffffff,#ffe8d1,#ffb066,#ff7300,#ffb066,#ffe8d1,#ffffff,#999999,#2e557e,#2e557e)] bg-[length:700%_700%] bg-clip-text text-transparent animate-gradient">
                 University of Florida
               </p>
-
-              <p className="text-xs sm:text-base text-gray-400 mt-1 text-end max-w-2/3">Focused on theory, scalable systems, and writing clean, maintainable code</p>
             </div>
           </div>
         </div>
