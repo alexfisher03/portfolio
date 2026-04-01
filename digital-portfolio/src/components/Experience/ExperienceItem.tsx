@@ -8,13 +8,14 @@ export const itemVariants: Variants = {
 type Props = {
   title: string
   company: string
+  authors?: string
   description: string
   technologies?: string[]
   link?: string
   date: string
 }
 
-export default function ExperienceItem({ title, company, description, technologies, link, date }: Props) {
+export default function ExperienceItem({ title, company, authors, description, technologies, link, date }: Props) {
   const Wrapper = (link ? "a" : "div") as "a" | "div"
   const wrapperProps = link
     ? { href: link, target: "_blank", rel: "noopener noreferrer" }
@@ -36,6 +37,11 @@ export default function ExperienceItem({ title, company, description, technologi
             <div className="text-white/60 text-sm italic transition-all duration-150 group-hover/item:text-[rgba(50,125,255)]/80 group-hover/item:underline">
               {company}
             </div>
+            {authors ? (
+              <div className="text-white/60 text-sm italic transition-all duration-150 group-hover/item:text-[rgba(50,125,255)]/80 group-hover/item:underline">
+                {authors}
+              </div>
+            ) : null}
             <div className="text-white/70 text-sm mt-2">{description}</div>
             {technologies && technologies.length > 0 ? (
               <ul className="mt-3 flex flex-wrap gap-2">

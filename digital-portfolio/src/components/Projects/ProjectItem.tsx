@@ -10,20 +10,23 @@ export const itemVariants: Variants = {
 type Props = {
   title: string
   description: string
-  link: string
+  link?: string
   imageUrl: string
   altUrl?: string
   technologies?: string[]
 }
 
 export default function ProjectItem({ title, description, link, imageUrl, altUrl, technologies }: Props) {
+  const Wrapper = (link ? "a" : "div") as "a" | "div"
+  const wrapperProps = link
+    ? { href: link, target: "_blank" as const, rel: "noopener noreferrer" }
+    : {}
+
   return (
     <motion.li variants={itemVariants} className="group group-hover/projects:opacity-20 hover:opacity-100 transition-opacity duration-200 w-full">
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="relative block overflow-hidden rounded-[24px] border border-white/15 backdrop-blur-sm shadow-[0_10px_20px_0_rgba(0,0,0,0.35)] shadow-red-500/10 transition-shadow ease-linear duration-200"
+      <Wrapper
+        {...wrapperProps}
+        className={`relative block overflow-hidden rounded-[24px] border border-white/15 backdrop-blur-sm shadow-[0_10px_20px_0_rgba(0,0,0,0.35)] shadow-red-500/10 transition-shadow ease-linear duration-200 ${link ? "" : "cursor-default"}`}
       >
         <div className="relative aspect-[16/9]">
           <img
@@ -48,9 +51,11 @@ export default function ProjectItem({ title, description, link, imageUrl, altUrl
             <div className="rounded-sm p-2 sm:p-3 transition-colors duration-150 ">
               <div className="flex">
                 <h3 className="text-white text-lg font-semibold group-hover:text-[#ff3232] transition-colors duration-200">{title}</h3>
-                <div className="ml-1 text-white group-hover:text-[#ff3232] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300">
-                  <ArrowOutwardIcon fontSize="small" />
-                </div>
+                {link ? (
+                  <div className="ml-1 text-white group-hover:text-[#ff3232] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300">
+                    <ArrowOutwardIcon fontSize="small" />
+                  </div>
+                ) : null}
               </div>
               <p className="mt-1 text-sm text-white/75 line-clamp-3">{description}</p>
               {technologies && technologies.length > 0 ? (
@@ -69,7 +74,7 @@ export default function ProjectItem({ title, description, link, imageUrl, altUrl
           </div>
         </div>
 
-      </a>
+      </Wrapper>
     </motion.li>
   )
 }

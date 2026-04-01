@@ -5,11 +5,28 @@ import qvAlt from "../../assets/qv-alt.gif"
 import swampSubleasing from "../../assets/ss.png"
 import ufACM from "../../assets/uf-acm.png"
 import ufACMAlt from "../../assets/uf-acm-alt.gif"
-import bbBg from "../../assets/bb-bg.png"
+import amtalThumb from "../../assets/amtal.png"
+import amtalHover from "../../assets/amtal.gif"
 import {Link} from "react-router-dom"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const projects = [
+  {
+    title: "HDL Parsing and Verification Pipeline",
+    description:
+      "End-to-end toolchain from SystemVerilog RTL and stage-scoped rules to solver-ready Boolean constraints: lex/parse, binding, Boolean IR, AIG, CNF, Z3 SAT, and witness reports mapped back to signals—built for explainable debug, not as a commercial-tool wrapper.",
+    imageUrl: amtalThumb,
+    altUrl: amtalHover,
+    technologies: [
+      "SystemVerilog",
+      "C++",
+      "Parsing",
+      "AIG",
+      "CNF",
+      "Z3",
+      "SAT",
+    ],
+  },
   {
     title: "Quantum Vision",
     description: "Educational and interactive web application visualizing various quantum systems",
@@ -33,14 +50,6 @@ const projects = [
     imageUrl: ufACM,
     altUrl: ufACMAlt,
     technologies: ["React", "Framer Motion", "Tailwind", "Firebase"]
-  },
-  {
-    title: "Barbell",
-    description: "Gym oriented social media web application for sharing workouts and progress",
-    link: "https://github.com/alexfisher03/Barbell",
-    imageUrl: bbBg,
-    altUrl: undefined,
-    technologies: ["Django", "React", "Tailwind", "MySQL", "Nginx", "Docker", "Gunicorn", "DigitalOcean"]
   }
 ]
 

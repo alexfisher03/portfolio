@@ -4,6 +4,11 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ProjectTable, { type ProjectRow } from "./ProjectTable";
 
 const archiveData : ProjectRow[] = [
+  {
+    year: "2025",
+    title: "HDL Parsing and Verification Pipeline",
+    stack: ["SystemVerilog", "C++", "Parsing", "AIG", "CNF", "Z3", "SAT"],
+  },
   { year: "2025", title: "Quantum Vision", stack: ["Svelte", "SvelteKit", "Typescript", "Tailwind", "Svelte Cubed"], linkHref: "https://qvisionsim.com", linkLabel: "qvisionsim.com" },
   { year: "2025", title: "Swamp Subleasing", stack: ["React", "Next.js", "Tailwind", "PostgreSQL"], linkHref: "https://www.swampsubleasing.com", linkLabel: "swampsubleasing.com" },
   { year: "2025", title: "ACM Connect - Discord Internship Bot", stack: ["Python", "Discord.py", "AWS"], linkHref: "https://acm-connect-website-git-feature-tandev-jasons-projects-bbe11fb6.vercel.app/", linkLabel: "acm-connect-website" },

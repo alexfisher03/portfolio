@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 import ExperienceItem from "./ExperienceItem"
-import experienceBg from "../../assets/experience-bg.png"
+import experienceBg from "../../assets/about-bg.png"
 
 const listVariants = {
   hidden: {},
@@ -33,7 +33,7 @@ export default function ExperienceSection() {
                 <ExperienceItem 
                   title="Software Engineer Intern, Wealth Services Engineering" 
                   company="Bank of New York (BNY)" 
-                  description="Built a production-ready admin microservice for Pershing Wealth Services using Spring Boot and Angular. Connected frontend with SpringBoot backend, leveraging REST API calls to IBM Mainframe master database through microservice chaining."
+                  description="Built a production-ready admin microservice for Pershing Wealth Services using Spring Boot and Angular. Connected the frontend to a Spring Boot backend and routed REST API calls through internal microservices to IBM mainframe data sources."
                   technologies={["Java", "SpringBoot", "Angular", "TypeScript", "Gitlab CI/CD", "Jasmine", "Jira"]}
                   date="June 2025 — August 2025"
                   link="https://www.bny.com/corporate/global/en.html"
@@ -41,51 +41,91 @@ export default function ExperienceSection() {
               </div>
               <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-12 sm:mb-0">
                 <ExperienceItem
-                 title="DevGuard – Open-Source Vulnerability Management Platform"
-                 company="L3montree Cybersecurity"
-                 description=" Contributor to DevGuard, an OWASP incubating project for vulnerability management, where I focused on improving user experience
-                 and frontend usability
-                 Learned Ory Kratos, custom UI components, and TypeScript-heavy patterns
-                 Collaborated with maintainers via peer review, ensuring all contributions passed Jest/unit tests and CI checks before merging"
-                technologies={["TypeScript", "Ory Kratos", "Github" ]}
-                date="May 2025"
-                link="https://devguard.org/"
-              />
-              </div>
-              <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-12 sm:mb-0">
-                <ExperienceItem
-                  title="Vice President - Internal"
-                  company="UF Association for Computing Machinery (ACM)"
-                  description="Managed internal operations for UF’s largest pre-professional Computer Science organization, establishing repeatable formulas for successful workshop and social event creation.
-                  Led the creation and delivery of technical code-along workshops, expanding annual engagement by over 8x and driving a 50% average increase in total organization attendance, while ensuring all projects were hands-on, documented, and take-home ready.
-                  (Previously served as Workshop Lead)"
-                technologies={["Public Speaking", "Organization Leadership", "React", "Git", "HTML", "CSS", "JavaScript", "Supabase", "Figma", "Firebase"]}
-                date="January 2023 - Present"
-                link="https://uf-acm.com/"
+                  title="Lead Researcher — verification tooling & hardware–software systems"
+                  company="University of Florida, SmartSystems Lab (Dr. Christophe Bobda)"
+                  description="Built software for debugging and analyzing pipelined RTL, including SystemVerilog parsing, structural analysis, stage-boundary extraction, and solver-backed workflows that localize failures and report witnesses tied back to RTL signals and time indices. The focus was practical verification tooling for diagnostics and counterexample generation. This work also led to a first-author publication with advising professor Christophe Bobda at IEEE DCAS 2026 on workspace-bounded reversible scheduling using grounded computation graphs exported from the verification pipeline."
+                  date="August 2025 — Spring 2026"
+                  technologies={[
+                    "SystemVerilog",
+                    "Parsing & semantic analysis",
+                    "SAT / SMT (Z3)",
+                    "Formal methods",
+                    "C++",
+                    "Debug tooling",
+                  ]}
+                  link="https://smartsystems.ece.ufl.edu/"
                 />
               </div>
               <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-12 sm:mb-0">
                 <ExperienceItem
-                  title="UF - Quantum Computing Undergraduate Research"
-                  company="Herbert Wertheim College of Engineering"
-                  description="Applied quantum algorithms to improve defect prediction, test optimization, and vulnerability detection in classical software systems,
-                  conducting research under Dr. Christophe Bobda in the Department of Electrical and Computer Engineering."
-                  date="August 2025 - Present"
-                  technologies={["Quantum Mechanics", "Qiskit"]}
+                  title="Lead Researcher — post-quantum cryptography readiness"
+                  company="UF SmartSystems Lab and Citi Bank R&D"
+                  description="Led research on post-quantum migration risk in enterprise software systems by reconstructing a bounded, sanitized case study aligned with Citi-relevant architecture. Identified where quantum-vulnerable public-key cryptography appears, normalized the findings into a cryptographic inventory, and mapped each result to services, dependencies, interfaces, and cryptographic roles to support migration planning and risk prioritization."
+                  date="2025 — Present"
+                  technologies={[
+                    "Cryptographic inventory",
+                    "Dependency analysis",
+                    "Enterprise systems",
+                    "Migration risk assessment",
+                  ]}
+                  link="https://www.citigroup.com/"
+                />
+              </div>
+              <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-12 sm:mb-0">
+                <ExperienceItem
+                  title="DevGuard – Open-Source Vulnerability Management Platform"
+                  company="L3montree Cybersecurity"
+                  description="Contributed to DevGuard, an OWASP-incubating vulnerability management platform, with a focus on improving user experience and frontend usability. Worked with Ory Kratos, custom UI components, and TypeScript-heavy patterns, and collaborated with maintainers through peer review to ensure changes passed unit tests and CI checks before merging."
+                  technologies={["TypeScript", "Ory Kratos", "Github"]}
+                  date="May 2025"
+                  link="https://devguard.org/"
                 />
               </div>
               <div className="group-hover:opacity-40 hover:opacity-100 transition-opacity duration-300 mb-6 sm:mb-0">
                 <ExperienceItem
-                  title="Software Engineer Lead"
+                  title="Vice President — Internal"
                   company="UF Association for Computing Machinery (ACM)"
-                  description="Redesigned and optimized the UF ACM website (Spring 2024) with React, Framer Motion, and Tailwind CSS, improving performance, maintainability, and engagement. Developed and deployed ACM Connect (Fall 2024), a Discord bot on AWS EC2 using discord.py, automating daily internship and opportunity postings for 2,100+ members. Built and launched the ACM Admin Dashboard (Spring 2025) with Next.js, React, and Firebase, centralizing meetings, attendance, analytics, and member administration for 475+ users."
-                  technologies={["React", "Next.js", "Firebase", "Framer Motion", "Tailwind CSS", "AWS EC2", "discord.py"]}
-                  date="May 2024 — May 2025"
-                  link="https://acm-connect-website-git-feature-tandev-jasons-projects-bbe11fb6.vercel.app/"
+                  description="Managed internal operations for UF’s largest pre-professional computer science organization by building repeatable playbooks for workshops and events and helping create code-along sessions where students left with complete, documented projects. As engineering lead, redesigned the ACM website, built ACM Connect, a Discord bot on AWS EC2 that delivered daily internship posts to more than 2,100 members, and launched the ACM Admin Dashboard for meetings, attendance, analytics, and member management. Also designed onboarding and deployment workflows that let additional campus organizations join a centralized multi-organization platform, scaling it to more than 1,000 users across groups."
+                  technologies={[
+                    "Organization Leadership",
+                    "Public Speaking",
+                    "React",
+                    "Next.js",
+                    "Firebase",
+                    "Framer Motion",
+                    "Tailwind CSS",
+                    "AWS EC2",
+                    "discord.py",
+                    "Figma",
+                    "Supabase",
+                    "Git",
+                  ]}
+                  date="January 2023 — May 2026"
+                  link="https://uf-acm.com/"
                 />
               </div>
             </motion.ul>
           </div>
+        <div className="mt-16 sm:mt-20">
+          <h2 className="text-xl sm:text-2xl text-white opacity-50 mb-8">PUBLICATIONS</h2>
+          <motion.ul initial="hidden" animate="visible" variants={listVariants} className="space-y-2">
+            <div>
+              <ExperienceItem
+                title="Earliest Failure Localization in Pipelines via Quantum Search"
+                company="IEEE DCAS 2026 Conference Proceedings"
+                authors="Alexander Fisher, Christophe Bobda"
+                description="Accepted for publication in the IEEE DCAS 2026 Conference Proceedings and presented at DCAS 2026. This paper studies how to localize the earliest point of failure in pipelined RTL using stage-scoped predicates derived from real design semantics and rule structure. It then uses grounded AIG-based representations to examine reversible compute and uncompute schedules under explicit workspace limits, measuring how tighter ancilla budgets force recomputation and change cost. The result is a controlled study of time-space tradeoffs in oracle-oriented verification workflows."
+                date="2026"
+                technologies={[
+                  "Pipelined RTL verification",
+                  "Boolean / AIG encodings",
+                  "Reversible scheduling",
+                  "Quantum search (oracle framing)",
+                ]}
+              />
+            </div>
+          </motion.ul>
+        </div>
       </div>
     </motion.section>
   )

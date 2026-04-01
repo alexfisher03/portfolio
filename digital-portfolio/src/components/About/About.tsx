@@ -29,7 +29,7 @@ function About() {
           <div className="min-w-0 basis-1/2">
             <h1 className="text-2xl sm:text-4xl">Software and Systems Engineer</h1>
             <p className="text-base sm:text-lg text-gray-400 mt-3">
-              Design, clarity, and maintainability are at the core of my work
+            I build and research software systems and technical tools for complex engineering problems
             </p>
             <div className="flex items-center gap-4 shrink-0 mt-6">
               <a href="https://github.com/alexfisher03/" target="_blank"  className="border border-[#ffffff20] hover:border-[#ffffff25] hover:bg-[#ffffff10] hover:scale-95 transform ease-in-out rounded-lg p-2 transition-colors duration-200">
