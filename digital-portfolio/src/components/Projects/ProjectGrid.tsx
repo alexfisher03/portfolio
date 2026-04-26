@@ -24,6 +24,7 @@ const projects = [
     title: "Budgeted Reversible Computation on And-Inverter Graphs",
     description:
       "Published at IEEE DCAS 2026: developed and evaluated schedulers for reversible computation on AIGs under strict ancilla budgets, spanning store-all baselines through exact-optimal Dijkstra search, with budget-vs-cost analysis.",
+    link: "https://github.com/alexfisher03/budgeted_active_volume_algorithm",
     imageUrl: bava,
     altUrl: bavaAlt,
     imageClassName: "scale-115 object-center",
