@@ -47,7 +47,7 @@ function About() {
                   <SchoolIcon />
                 </div>
                 <h3 className="mt-3 sm:mt-0 text-sm sm:text-lg">M.S. in Computer Science</h3>
-                <p className="text-sm sm:text-base italic text-end bg-[linear-gradient(to_right,#111111,#bf5700,#ffffff,#bf5700,#111111)] bg-[length:700%_700%] bg-clip-text text-transparent animate-gradient">
+                <p className="text-sm sm:text-base italic text-end bg-[linear-gradient(to_right,#8a3f00,#bf5700,#bf5700,#bf5700,#8a3f00,#ffffff,#ffd9b0,#ffb366,#bf5700,#ffb366,#ffd9b0,#ffffff,#8a3f00,#bf5700,#bf5700)] bg-[length:700%_700%] bg-clip-text text-transparent animate-gradient">
                   University of Texas
                 </p>
                 <h3 className="mt-2 text-sm sm:text-lg">B.S. in Computer Science</h3>

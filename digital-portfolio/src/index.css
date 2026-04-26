@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --animate-gradient: gradient 8s linear infinite;
+  --animate-gradient: gradient 16s linear infinite;
 
   @keyframes gradient {
     0%   { background-position: 0% 50%; }
