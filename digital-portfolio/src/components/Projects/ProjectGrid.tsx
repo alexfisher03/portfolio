@@ -1,20 +1,39 @@
 import { motion } from "motion/react"
 import ProjectItem from "./ProjectItem"
 import qvBg from "../../assets/qv-bg.png"
+import bava from "../../assets/bava.png"
 import qvAlt from "../../assets/qv-alt.gif"
-import swampSubleasing from "../../assets/ss.png"
-import ufACM from "../../assets/uf-acm.png"
-import ufACMAlt from "../../assets/uf-acm-alt.gif"
 import amtalThumb from "../../assets/amtal.png"
 import amtalHover from "../../assets/amtal.gif"
+import bavaAlt from "../../assets/budg.png"
+import shig from "../../assets/shig.png"
+import shigAlt from "../../assets/shig.gif"
 import {Link} from "react-router-dom"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const projects = [
   {
-    title: "HDL Parsing and Verification Pipeline",
+    title: "Shigawire",
+    description: "Desktop HTTP recording and replay proxy with automatic redaction, packaged with Tauri and backed by Go/Fiber, reverse-proxy capture, and SQLite.",
+    link: "https://github.com/alexfisher03/shigawire-dev",
+    imageUrl: shig,
+    altUrl: shigAlt,
+    technologies: ["Tauri", "Next.js", "React", "Tailwind", "Go", "Fiber", "SQLite"]
+  },
+  {
+    title: "Budgeted Reversible Computation on And-Inverter Graphs",
     description:
-      "End-to-end toolchain from SystemVerilog RTL and stage-scoped rules to solver-ready Boolean constraints: lex/parse, binding, Boolean IR, AIG, CNF, Z3 SAT, and witness reports mapped back to signals—built for explainable debug, not as a commercial-tool wrapper.",
+      "Published at IEEE DCAS 2026: developed and evaluated schedulers for reversible computation on AIGs under strict ancilla budgets, spanning store-all baselines through exact-optimal Dijkstra search, with budget-vs-cost analysis.",
+    imageUrl: bava,
+    altUrl: bavaAlt,
+    imageClassName: "scale-115 object-center",
+    altImageClassName: "scale-110 object-center",
+    technologies: ["C++", "AIG", "Reversible Scheduling", "Dijkstra", "Ancilla Budgeting"],
+  },
+  {
+    title: "Amtal - HDL Parsing and Verification Pipeline",
+    description:
+      "End-to-end toolchain from SystemVerilog RTL and stage-scoped rules to solver-ready Boolean constraints: lex/parse, binding, Boolean IR, AIG, CNF, Z3 SAT, and witness reports mapped back to signals—built for explainable debug.",
     imageUrl: amtalThumb,
     altUrl: amtalHover,
     technologies: [
@@ -34,22 +53,6 @@ const projects = [
     imageUrl: qvBg,
     altUrl: qvAlt,
     technologies: ["Svelte", "SvelteKit", "Typescript", "Tailwind", "Svelte Cubed"]
-  },
-  {
-    title: "Gator Subleasing",
-    description: "Early contributor — Platform for UF students to list and find subleases all in one place (400+ Users)",
-    link: "https://www.gatorsubleasing.com/",
-    imageUrl: swampSubleasing,
-    altUrl: undefined,
-    technologies: ["React", "Next.js", "Tailwind", "PostgreSQL"]
-  },
-  {
-    title: "UF ACM Main Website",
-    description: "Redesign of UF ACM main website with new attendance and analytics features (500+ users)",
-    link: "https://uf-acm.com",
-    imageUrl: ufACM,
-    altUrl: ufACMAlt,
-    technologies: ["React", "Framer Motion", "Tailwind", "Firebase"]
   }
 ]
 

@@ -35,15 +35,15 @@ export default function ProjectTable({ projects }: Props) {
                 </tr>
             </thead>
             <tbody> 
-            {projects.map((p) => ( // map rows
+            {projects.map((p) => ( 
               <tr key={`${p.year}-${p.title}`} className="border-b border-slate-300/30 last:border-none group"> 
                 <td className="py-4 pr-4 align-top text-sm text-slate-300">{p.year}</td> 
                 <td className="py-4 pr-4 align-top text-xs sm:text-base font-semibold leading-snug text-slate-100">{p.title}</td> 
                 {isMobile ? null : (
                   <td className="py-4 pr-4 align-top"> 
                     <ul className="flex flex-wrap gap-2"> 
-                      {p.stack.map((t) => ( // map tech
-                        <li // pill
+                      {p.stack.map((t) => ( 
+                        <li 
                           key={t} 
                           className="px-2 py-1 rounded-full text-xs text-[#FF13F0]/80 bg-[#ff13ef37]" // pink pill style
                         > 
@@ -53,23 +53,25 @@ export default function ProjectTable({ projects }: Props) {
                     </ul>
                   </td>
                 )}
-                {p.linkHref ? (
-                    <td className="py-4 pr-0 align-top"> 
-                  <a
-                    href={p.linkHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex text-xs sm:text-base items-center group/link text-slate-200 hover:text-[#FF13F0]/80 transition-colors duration-200"
-                  >
-                    {p.linkLabel ?? "view project"}
-                    <span className="ml-2 transform transition-transform duration-200 group-hover:translate-x-1 group/link-hover:translate-x-1">
-                      <ArrowOutwardIcon fontSize="small"/>
+                <td className="py-4 pr-0 align-top">
+                  {p.linkHref ? (
+                    <a
+                      href={p.linkHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex text-xs sm:text-base items-center group/link text-slate-200 hover:text-[#FF13F0]/80 transition-colors duration-200"
+                    >
+                      {p.linkLabel ?? "view project"}
+                      <span className="ml-2 transform transition-transform duration-200 group-hover:translate-x-1 group/link-hover:translate-x-1">
+                        <ArrowOutwardIcon fontSize="small"/>
+                      </span>
+                    </a>
+                  ) : (
+                    <span className="inline-flex text-xs sm:text-base items-center text-slate-400">
+                      {p.linkLabel ?? "—"}
                     </span>
-                  </a>
+                  )}
                 </td>
-                ) : (
-                  null
-                )}
               </tr>
             ))}
           </tbody> 
