@@ -1,16 +1,8 @@
-import { createContext, useContext } from "react";
-import { useMediaQuery } from "../hooks/useMediaQuery";
-
-const ViewportContext = createContext({ isMobile: false });
+import { useMediaQuery } from "../hooks/useMediaQuery"
+import { ViewportContext } from "./viewportContextValue"
 
 export const ViewportProvider = ({ children }: { children: React.ReactNode }) => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery("(max-width: 768px)")
 
-  return (
-    <ViewportContext.Provider value={{ isMobile }}>
-      {children}
-    </ViewportContext.Provider>
-  );
-};
-
-export const useViewport = () => useContext(ViewportContext);
+  return <ViewportContext.Provider value={{ isMobile }}>{children}</ViewportContext.Provider>
+}

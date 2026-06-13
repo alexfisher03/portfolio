@@ -2,7 +2,7 @@ import type { Variants } from "motion/react"
 import { motion } from "motion/react"
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-export const itemVariants: Variants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 16 },
   visible: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.8, delay: 0.3, ease: "easeOut" as const } }
 }

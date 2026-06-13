@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { useViewport } from "../../context/ViewportContext"
+import { useViewport } from "../../context/useViewport"
 
 type Props = { onRevealExperience: () => void, onRevealProjects: () => void }
 
